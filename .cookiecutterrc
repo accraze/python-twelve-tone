@@ -1,0 +1,49 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc 
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary project-path
+#
+# See:
+#    https://pypi.python.org/pypi/cookiecutter
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=project-path/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+
+default_context:
+
+    appveyor:                  'yes'
+    c_extension_cython:        'no'
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    codacy:                    'no'
+    codeclimate:               'no'
+    codecov:                   'yes'
+    command_line_interface:    'click'
+    command_line_interface_bin_name: 'twelve-tone'
+    coveralls:                 'yes'
+    distribution_name:         'twelve-tone'
+    email:                     'accraze@gmail.com'
+    full_name:                 'Andy Craze'
+    github_username:           'accraze'
+    landscape:                 'no'
+    package_name:              'twelve_tone'
+    project_name:              'Twelve Tone'
+    project_short_description: 'A Twelve-Tone matrix to generate random meelodies'
+    release_date:              'today'
+    repo_name:                 'python-twelve-tone'
+    requiresio:                'yes'
+    scrutinizer:               'no'
+    sphinx_doctest:            'no'
+    sphinx_theme:              'sphinx-rtd-theme'
+    test_matrix_configurator:  'no'
+    test_matrix_separate_coverage: 'no'
+    test_runner:               'pytest'
+    travis:                    'yes'
+    version:                   '0.1.0'
+    website:                   'https://github.com/accraze'
+    year:                      '2016'

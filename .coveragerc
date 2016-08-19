@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/twelve_tone
+   */site-packages/twelve_tone
+
+[run]
+branch = true
+source =
+    twelve_tone
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*
