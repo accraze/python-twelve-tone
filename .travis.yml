@@ -24,6 +24,7 @@ install:
   - easy_install --version
   - pip --version
   - tox --version
+  - pip install -r requirements.txt
 script:
   - tox -v
 after_failure:
