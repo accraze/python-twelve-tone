@@ -45,8 +45,8 @@ class Composer(object):
                         calc = self._transform_cell(calc)
                     self.matrix[x][y + 1] = calc
                 except IndexError:
-                    print ('x = %s' % x)
-                    print ('y = %s' % y)
+                    print('x = %s' % x)
+                    print('y = %s' % y)
 
     def _transform_cell(self, cell):
         if cell in range(1, 13):
