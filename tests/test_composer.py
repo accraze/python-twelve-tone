@@ -1,5 +1,5 @@
 import unittest
-from src.python_twelve_tone import Composer
+from twelve_tone import Composer
 
 class TestMatrix(unittest.TestCase):
 
@@ -14,7 +14,7 @@ class TestMatrix(unittest.TestCase):
 
   def test_transform_cell(self):
     negative = -3
-    transformed_num = Composer().transform_cell(negative)
+    transformed_num = Composer()._transform_cell(negative)
     self.assertEqual(transformed_num, 9)
 
   def test_master(self):
