@@ -55,6 +55,3 @@ class Composer(object):
             return self._transform_cell(cell + 12)
         else:
             return self._transform_cell(cell - 12)
-
-if __name__ == "__main__":
-    print Composer().compose()
