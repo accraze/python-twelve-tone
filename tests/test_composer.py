@@ -1,5 +1,5 @@
 import unittest
-from twelve_tone import Composer
+from twelve_tone.composer import Composer
 
 
 class TestMatrix(unittest.TestCase):
