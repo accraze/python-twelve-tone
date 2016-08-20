@@ -66,6 +66,7 @@ setup(
     ],
     install_requires=[
         'click',
+        'numpy'
     ],
     extras_require={
         # eg:
