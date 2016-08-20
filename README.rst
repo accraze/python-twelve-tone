@@ -10,7 +10,7 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |travis| |appveyor| |requires|
+      - | |travis|
         | |coveralls| |codecov|
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
@@ -59,7 +59,6 @@ Twelve-tone matrix to generate dodecaphonic melodies.
 Following a process created by the composer Arnold Schoenberg, this library
 computes a matrix to create twelve-tone serialism melodies which compose each
 of the 12 semitones of the chromatic scale with equal importance.
-
 
 
 * Free software: BSD license
