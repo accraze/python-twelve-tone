@@ -26,24 +26,24 @@ class Composer(object):
         melody = []
         tone_row = column if column else row
 
-        for cell in self.matrix[itone_row]:
+        for cell in self.matrix[tone_row]:
             melody.append(self.get_pitch(int(cell)))
         return melody
 
     def get_pitch(self, cell):
         pitch_map = {
-                '1' :'C' ,
-                '2' :'C# / Db',
-                '3' : 'D',
-                '4' : 'D# / Eb',
-                '5' : 'E',
-                '6' : 'F',
-                '7' :'F# / Gb' ,
-                '8' : 'G',
-                '9' :'G# / Ab' ,
-                '10': 'A',
-                '11':'A# / Bb' ,
-                '12':'B'
+            '1': 'C',
+            '2': 'C# / Db',
+            '3': 'D',
+            '4': 'D# / Eb',
+            '5': 'E',
+            '6': 'F',
+            '7': 'F# / Gb',
+            '8': 'G',
+            '9': 'G# / Ab',
+            '10': 'A',
+            '11': 'A# / Bb',
+            '12': 'B'
         }
 
         return pitch_map.get(str(cell))
