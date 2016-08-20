@@ -71,15 +71,11 @@ class Composer(object):
     def _compute_matrix(self):
         for x in range(1, 12):
             for y in range(0, 11):
-                try:
-                    calc = (self.matrix[x][y] - self.matrix[x - 1][y]) \
+                calc = (self.matrix[x][y] - self.matrix[x - 1][y]) \
                         + self.matrix[x - 1][y + 1]
-                    if calc not in range(1, 13):
-                        calc = self._transform_cell(calc)
-                    self.matrix[x][y + 1] = calc
-                except IndexError:
-                    print('x = %s' % x)
-                    print('y = %s' % y)
+                if calc not in range(1, 13):
+                    calc = self._transform_cell(calc)
+                self.matrix[x][y + 1] = calc
 
     def _transform_cell(self, cell):
         if cell in range(1, 13):
