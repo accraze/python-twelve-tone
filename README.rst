@@ -23,15 +23,7 @@ Overview
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/accraze/python-twelve-tone
 
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/accraze/python-twelve-tone?branch=master&svg=true
-    :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/accraze/python-twelve-tone
-
-.. |requires| image:: https://requires.io/github/accraze/python-twelve-tone/requirements.svg?branch=master
-    :alt: Requirements Status
-    :target: https://requires.io/github/accraze/python-twelve-tone/requirements/?branch=master
-
-.. |coveralls| image:: https://coveralls.io/repos/accraze/python-twelve-tone/badge.svg?branch=master&service=github
+.. |coveralls| image:: https://coveralls.io/repos/accraze/python-twelve-tone/badge.svg?branch=master
     :alt: Coverage Status
     :target: https://coveralls.io/r/accraze/python-twelve-tone
 
@@ -62,7 +54,13 @@ Overview
 
 .. end-badges
 
-A Twelve-Tone matrix to generate random meelodies
+Twelve-tone matrix to generate dodecaphonic melodies.
+
+Following a process created by the composer Arnold Schoenberg, this library
+computes a matrix to create twelve-tone serialism melodies which compose each
+of the 12 semitones of the chromatic scale with equal importance.
+
+
 
 * Free software: BSD license
 
