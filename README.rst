@@ -70,6 +70,18 @@ Installation
 
     pip install twelve-tone
 
+Quick Start
+===========
+
+::
+
+    >>> from twelve_tone.composer import Composer
+    >>> c = Composer()
+    >>> c.compose()
+    >>> c.get_melody()
+    ['C# / Db', 'A# / Bb', 'F', 'D', 'G# / Ab', 'D# / Eb', 'F# / Gb',
+        'A', 'C', 'G', 'B', 'E']
+
 Documentation
 =============
 
