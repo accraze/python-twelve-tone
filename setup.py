@@ -26,7 +26,7 @@ setup(
     name='twelve-tone',
     version='0.1.0',
     license='BSD',
-    description='Twelve-tone matrix to generate dodecaphonic melodies'
+    description='Twelve-tone matrix to generate dodecaphonic melodies',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
