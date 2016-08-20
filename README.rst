@@ -10,7 +10,7 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |travis| |coveralls| |codecov|
+      - |travis| |coveralls| |codecov|
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
