@@ -26,7 +26,7 @@ setup(
     name='twelve-tone',
     version='0.1.0',
     license='BSD',
-    description='A Twelve-Tone matrix to generate random meelodies',
+    description='Twelve-tone matrix to generate dodecaphonic melodies'
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
@@ -53,16 +53,10 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: Implementation :: CPython',
-        'Programming Language :: Python :: Implementation :: PyPy',
-        # uncomment if you test on these interpreters:
-        # 'Programming Language :: Python :: Implementation :: IronPython',
-        # 'Programming Language :: Python :: Implementation :: Jython',
-        # 'Programming Language :: Python :: Implementation :: Stackless',
         'Topic :: Utilities',
     ],
     keywords=[
-        # eg: 'keyword1', 'keyword2', 'keyword3',
+        'music', 'composition', 'matrix', 'atonal'
     ],
     install_requires=[
         'click',
