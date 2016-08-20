@@ -18,6 +18,11 @@ class TestMatrix(unittest.TestCase):
         transformed_num = Composer()._transform_cell(negative)
         self.assertEqual(transformed_num, 9)
 
+    def test_translate_pitch(self):
+        cell = 3
+        pitch = Composer().get_pitch(cell)
+        self.assertEqual(pitch, 'D')
+
     def test_master(self):
         row = [3, 1, 9, 5, 4, 6, 8, 7, 12, 10, 11, 2]
         m = Composer().compose(top_row=row)
