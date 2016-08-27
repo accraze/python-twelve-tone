@@ -6,6 +6,7 @@ class MIDIFile(object):
     def __init__(self, BPM=120, filename='example.mid'):
         self.pattern = MIDITime(BPM, filename)
         self.step_counter = 0
+        self.filename = filename
 
     def create(self, notes):
         midinotes = []
