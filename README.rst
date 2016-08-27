@@ -12,7 +12,7 @@ Overview
     * - tests
       - |travis| |coveralls| |codecov|
     * - package
-      - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
+      - |version| |wheel| |supported-versions|
 
 .. |docs| image:: https://readthedocs.org/projects/python-twelve-tone/badge/?style=flat
     :target: https://readthedocs.org/projects/python-twelve-tone
@@ -34,9 +34,6 @@ Overview
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/twelve-tone
 
-.. |downloads| image:: https://img.shields.io/pypi/dm/twelve-tone.svg?style=flat
-    :alt: PyPI Package monthly downloads
-    :target: https://pypi.python.org/pypi/twelve-tone
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/twelve-tone.svg?style=flat
     :alt: PyPI Wheel
@@ -46,9 +43,6 @@ Overview
     :alt: Supported versions
     :target: https://pypi.python.org/pypi/twelve-tone
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/twelve-tone.svg?style=flat
-    :alt: Supported implementations
-    :target: https://pypi.python.org/pypi/twelve-tone
 
 
 .. end-badges
