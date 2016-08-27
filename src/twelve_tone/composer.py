@@ -32,8 +32,8 @@ class Composer(object):
             melody.append(self.get_pitch(int(cell)))
         return melody
 
-    def save_to_midi(self, tone_rows=1):
-        m = MIDIFile()
+    def save_to_midi(self, tone_rows=1, filename='example.mid'):
+        m = MIDIFile(filename=filename)
         for index in range(0, tone_rows):
             row = self.matrix[index]
             m.create(row)
