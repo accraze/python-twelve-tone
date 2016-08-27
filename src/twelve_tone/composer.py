@@ -34,7 +34,7 @@ class Composer(object):
 
     def save_to_midi(self, tone_rows=1):
         m = MIDIFile()
-        for index in range(0,tone_rows):
+        for index in range(0, tone_rows):
             row = self.matrix[index]
             m.create(row)
 

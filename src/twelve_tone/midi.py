@@ -1,5 +1,6 @@
 from miditime.miditime import MIDITime
 
+
 class MIDIFile(object):
 
     def __init__(self, BPM=120, filename='example.mid'):
@@ -12,7 +13,7 @@ class MIDIFile(object):
         attack = 200
         beats = 1
         for note in notes:
-            pitch = (note-1) + offset
+            pitch = (note - 1) + offset
             midinote = [self.step_counter, pitch, attack, beats]
             midinotes.append(midinote)
             self.step_counter = self.step_counter + 1
