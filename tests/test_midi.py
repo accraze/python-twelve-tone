@@ -10,8 +10,6 @@ class TestMIDIFile(unittest.TestCase):
     def test_init(self):
         m = MIDIFile()
         self.assertEquals(m.step_counter, 0)
-        m = MIDIFile(BPM=200)
-        self.assertEquals(m.BPM, 200)
         m = MIDIFile(filename="test.mid")
         self.assertEquals(m.filename, 'test.mid')
 
@@ -20,9 +18,9 @@ class TestMIDIFile(unittest.TestCase):
         path = 'tmp'
         os.makedirs(path)
         os.chdir(path)
-        m = MIDIFile()
+        m = MIDIFile(filename='test.mid')
         m.create(notes)
-        self.assertTrue(os.path.exists(os.path.join(os.getcwd(),file_name)))
+        self.assertTrue(os.path.exists(os.path.join(os.getcwd(),'test.mid')))
         os.chdir(os.pardir)
         shutil.rmtree('tmp', ignore_errors=True)
 
