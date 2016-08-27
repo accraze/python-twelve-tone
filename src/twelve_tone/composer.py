@@ -1,6 +1,8 @@
 import random
 import numpy as np
 
+from midi import MIDIFile
+
 
 class Composer(object):
     matrix = np.zeros((12, 12))
@@ -29,6 +31,12 @@ class Composer(object):
         for cell in self.matrix[tone_row]:
             melody.append(self.get_pitch(int(cell)))
         return melody
+
+    def save_to_midi(self, tone_rows=1):
+        m = MIDIFile()
+        for index in range(0,tone_rows):
+            row = self.matrix[index]
+            m.create(row)
 
     def get_pitch(self, cell):
         pitch_map = {
@@ -72,7 +80,7 @@ class Composer(object):
         for x in range(1, 12):
             for y in range(0, 11):
                 calc = (self.matrix[x][y] - self.matrix[x - 1][y]) \
-                        + self.matrix[x - 1][y + 1]
+                    + self.matrix[x - 1][y + 1]
                 if calc not in range(1, 13):
                     calc = self._transform_cell(calc)
                 self.matrix[x][y + 1] = calc
