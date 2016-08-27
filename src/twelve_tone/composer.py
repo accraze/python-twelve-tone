@@ -1,8 +1,7 @@
-from .midi import MIDIFile # noqa
+from .midi import MIDIFile  # noqa
 
 import random
 import numpy as np
-
 
 
 class Composer(object):
