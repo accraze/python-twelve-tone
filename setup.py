@@ -56,11 +56,12 @@ setup(
         'Topic :: Utilities',
     ],
     keywords=[
-        'music', 'composition', 'matrix', 'atonal'
+        'music', 'composition', 'matrix', 'atonal', 'midi'
     ],
     install_requires=[
         'click',
-        'numpy'
+        'numpy',
+        'miditime'
     ],
     extras_require={
         # eg:
