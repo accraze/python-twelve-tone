@@ -49,6 +49,9 @@ Overview
 
 Twelve-tone matrix to generate dodecaphonic melodies.
 
+
+.. image:: https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Schoenberg_-_Piano_Piece_op.33a_tone_row.png/640px-Schoenberg_-_Piano_Piece_op.33a_tone_row.png
+
 Following a process created by the composer Arnold Schoenberg, this library
 computes a matrix to create twelve-tone serialism melodies which compose each
 of the 12 semitones of the chromatic scale with equal importance.
