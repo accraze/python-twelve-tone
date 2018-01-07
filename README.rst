@@ -10,7 +10,7 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - |travis| |coveralls| |codecov|
+      - |travis| |codecov|
     * - package
       - |version| |wheel| |supported-versions|
 
@@ -21,10 +21,6 @@ Overview
 .. |travis| image:: https://travis-ci.org/accraze/python-twelve-tone.svg?branch=master
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/accraze/python-twelve-tone
-
-.. |coveralls| image:: https://coveralls.io/repos/accraze/python-twelve-tone/badge.svg?branch=master
-    :alt: Coverage Status
-    :target: https://coveralls.io/r/accraze/python-twelve-tone
 
 .. |codecov| image:: https://codecov.io/github/accraze/python-twelve-tone/coverage.svg?branch=master
     :alt: Coverage Status
