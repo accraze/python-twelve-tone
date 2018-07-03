@@ -2,7 +2,17 @@
 Changelog
 =========
 
-0.1.0 (2016-08-20)
+0.2.1 (2016-8-27)
+-----------------------------------------
+
+* build: added `miditime` to setup install requirements
+
+0.2.0 (2016-8-27)
+-----------------------------------------
+
+* composer: Added save to MIDI capability
+
+0.1.0 (2016-8-20)
 -----------------------------------------
 
 * First release on PyPI.
