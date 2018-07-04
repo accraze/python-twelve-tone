@@ -65,6 +65,16 @@ Installation
 Quick Start
 ===========
 
+You can quickly generate a random twelve-tone melody with the CLI
+
+::
+
+    $ twelve-tone
+    ['C# / Db', 'A# / Bb', 'F', 'D', 'G# / Ab', 'D# / Eb', 'F# / Gb',
+        'A', 'C', 'G', 'B', 'E']
+
+Or you can use the following methods in a script:
+
 ::
 
     >>> from twelve_tone.composer import Composer
