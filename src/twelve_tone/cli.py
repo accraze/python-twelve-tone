@@ -16,8 +16,11 @@ Why does this file exist, and why not put this in __main__?
 """
 import click
 
+from twelve_tone.composer import Composer
+
 
 @click.command()
-@click.argument('names', nargs=-1)
-def main(names):
-    click.echo(repr(names))
+def main():
+    c = Composer()
+    c.compose()
+    click.echo(c.get_melody())
