@@ -23,7 +23,7 @@ if os.getenv('SPELLCHECK'):
 source_suffix = '.rst'
 master_doc = 'index'
 project = u'Twelve Tone'
-year = u'2016'
+year = u'2018'
 author = u'Andy Craze'
 copyright = '{0}, {1}'.format(year, author)
 version = release = u'0.3.0'
