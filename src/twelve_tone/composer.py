@@ -27,11 +27,16 @@ class Composer(object):
         otherwise the top most tone row will be returned.
         """
         melody = []
-        tone_row = column if column else row
+        tone_row = self._get_tone_row(row, column)
 
-        for cell in self.matrix[tone_row]:
+        for cell in tone_row:
             melody.append(self.get_pitch(int(cell)))
         return melody
+
+    def _get_tone_row(self, row, column):
+        if column:
+            return self.matrix[:, column]
+        return self.matrix[row]
 
     def save_to_midi(self, tone_rows=1, filename='example.mid'):
         m = MIDIFile(filename=filename)

@@ -5,6 +5,14 @@ from twelve_tone.composer import Composer
 
 class TestMatrix(unittest.TestCase):
 
+    def test_get_tone_row(self):
+        m = Composer()
+        m.compose()
+        row = m._get_tone_row(1, None)
+        self.assertEquals(list(row), list(m.matrix[1]))
+        col = m._get_tone_row(0, 1)
+        self.assertEquals(list(col), list(m.matrix[:, 1]))
+
     def test_top_row(self):
         m = Composer().compose()
         # check top row is unique
