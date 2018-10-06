@@ -22,7 +22,8 @@ from twelve_tone.composer import Composer
 @click.command()
 @click.option('--row', '-r', default=0, help='Row to use as row tone')
 @click.option('--column', '-c', default=0, help='Column to use as column tone')
-def main(row, column):
+@click.option('--midi', '-m', help='MIDI output file')
+def main(row, column, midi):
     c = Composer()
     c.compose()
     if row < 0 or column < 0:
@@ -35,13 +36,5 @@ def main(row, column):
         click.echo("Column number exceeds melody column count.")
         exit(1)
     click.echo(c.get_melody(row=row, column=column))
-
-
-@click.command()
-@click.option('--midi', '-m', help='MIDI output file')
-def main(midi):
-    c = Composer()
-    c.compose()
-    click.echo(c.get_melody())
     if midi is not None:
         c.save_to_midi(filename=midi)
