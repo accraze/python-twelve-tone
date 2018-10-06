@@ -26,4 +26,4 @@ def main(midi):
     c.compose()
     click.echo(c.get_melody())
     if midi is not None:
-      c.save_to_midi(filename=midi)
+        c.save_to_midi(filename=midi)
