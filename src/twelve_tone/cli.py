@@ -20,6 +20,24 @@ from twelve_tone.composer import Composer
 
 
 @click.command()
+@click.option('--row', '-r', default=0, help='Row to use as row tone')
+@click.option('--column', '-c', default=0, help='Column to use as column tone')
+def main(row, column):
+    c = Composer()
+    c.compose()
+    if row < 0 or column < 0:
+        click.echo("Invalid row or column arguments.")
+        exit(1)
+    elif row >= c.matrix.shape[0]:
+        click.echo("Row number exceeds melody row count.")
+        exit(1)
+    elif column >= c.matrix.shape[1]:
+        click.echo("Column number exceeds melody column count.")
+        exit(1)
+    click.echo(c.get_melody(row=row, column=column))
+
+
+@click.command()
 @click.option('--midi', '-m', help='MIDI output file')
 def main(midi):
     c = Composer()
