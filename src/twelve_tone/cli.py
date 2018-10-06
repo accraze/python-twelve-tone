@@ -20,7 +20,10 @@ from twelve_tone.composer import Composer
 
 
 @click.command()
-def main():
+@click.option('--midi', '-m', help='MIDI output file')
+def main(midi):
     c = Composer()
     c.compose()
     click.echo(c.get_melody())
+    if midi is not None:
+        c.save_to_midi(filename=midi)
