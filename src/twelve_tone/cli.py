@@ -35,3 +35,13 @@ def main(row, column):
         click.echo("Column number exceeds melody column count.")
         exit(1)
     click.echo(c.get_melody(row=row, column=column))
+
+
+@click.command()
+@click.option('--midi', '-m', help='MIDI output file')
+def main(midi):
+    c = Composer()
+    c.compose()
+    click.echo(c.get_melody())
+    if midi is not None:
+        c.save_to_midi(filename=midi)

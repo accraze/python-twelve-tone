@@ -33,3 +33,13 @@ MIDI:
     >>> c.compose()
     >>> c.save_to_midi(filename='TWELVE_TONE.mid')
 
+
+You can even select either a specific row or column when generating a melody.
+
+::
+
+    from twelve_tone.composer import Composer
+    c = Composer()
+    c.compose()
+    melody_row = c.get_melody(row=3)
+    melody_col = c.get_melody(column=7)
