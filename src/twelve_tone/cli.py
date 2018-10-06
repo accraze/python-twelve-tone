@@ -26,12 +26,12 @@ def main(row, column):
     c = Composer()
     c.compose()
     if row < 0 or column < 0:
-      click.echo("Invalid row or column arguments.")
-      exit(1)
+        click.echo("Invalid row or column arguments.")
+        exit(1)
     elif row >= c.matrix.shape[0]:
-      click.echo("Row number exceeds melody row count.")
-      exit(1)
+        click.echo("Row number exceeds melody row count.")
+        exit(1)
     elif column >= c.matrix.shape[1]:
-      click.echo("Column number exceeds melody column count.")
-      exit(1)
+        click.echo("Column number exceeds melody column count.")
+        exit(1)
     click.echo(c.get_melody(row=row, column=column))
