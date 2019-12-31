@@ -1,5 +1,6 @@
 language: python
 python: '3.5'
+dist: bionic
 sudo: false
 env:
   global:
