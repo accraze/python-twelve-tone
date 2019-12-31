@@ -12,7 +12,7 @@ env:
 
     - TOXENV=py27,codecov
       #   - TOXENV=py33,codecov
-    - TOXENV=py34,codecov
+    # - TOXENV=py34,codecov
     - TOXENV=py35,codecov
 #    - TOXENV=pypy,coveralls,codecov
 before_install:
