@@ -26,7 +26,7 @@ project = u'Twelve Tone'
 year = u'2018'
 author = u'Andy Craze'
 copyright = '{0}, {1}'.format(year, author)
-version = release = u'0.4.0'
+version = release = u'0.4.1'
 
 pygments_style = 'trac'
 templates_path = ['.']
