@@ -6,7 +6,7 @@ from .midi import MIDIFile  # noqa
 
 
 class Composer(object):
-    matrix = np.zeros((12, 12))
+    matrix = np.zeros((12, 12), dtype=int)
 
     def compose(self, top_row=None):
         # top_row
