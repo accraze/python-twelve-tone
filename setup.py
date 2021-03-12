@@ -24,7 +24,7 @@ def read(*names, **kwargs):
 
 setup(
     name='twelve-tone',
-    version='0.4.1',
+    version='0.4.2',
     license='BSD',
     description='Twelve-tone matrix to generate dodecaphonic melodies',
     long_description='%s\n%s' % (
