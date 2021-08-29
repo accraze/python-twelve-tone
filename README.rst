@@ -62,6 +62,8 @@ Installation
 
     pip install twelve-tone
 
+The `GuixRUs <https://git.sr.ht/~whereiseveryone/guixrus>`_ channel also provides ``twelve-tone``.
+
 Quick Start
 ===========
 
