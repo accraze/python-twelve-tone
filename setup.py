@@ -49,11 +49,14 @@ setup(
         'Operating System :: POSIX',
         'Operating System :: Microsoft :: Windows',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Topic :: Multimedia :: Sound/Audio :: MIDI',
         'Topic :: Utilities',
     ],
     keywords=[
@@ -73,6 +76,7 @@ setup(
         # 'rst': ['docutils>=0.11'],
         # ':python_version=="2.6"': ['argparse'],
     },
+    long_description_content_type='text/x-rst',
     entry_points={
         'console_scripts': [
             'twelve-tone = twelve_tone.cli:main',
