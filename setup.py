@@ -24,11 +24,12 @@ def read(*names, **kwargs):
 
 setup(
     name='twelve-tone',
-    version='0.4.2',
+    version='0.5.0',
     license='BSD',
     description='Twelve-tone matrix to generate dodecaphonic melodies',
     long_description='%s\n%s' % (
-        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
+        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub(
+            '', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),
     author='Andy Craze',
@@ -56,17 +57,21 @@ setup(
         'Topic :: Utilities',
     ],
     keywords=[
-        'music', 'composition', 'matrix', 'atonal', 'midi'
+        'music',
+        'composition',
+        'matrix',
+        'atonal',
+        'midi',
     ],
     install_requires=[
         'click',
-        'numpy',
-        'miditime'
+        'mido',
+        'rich',
     ],
     extras_require={
         # eg:
-        #   'rst': ['docutils>=0.11'],
-        #   ':python_version=="2.6"': ['argparse'],
+        # 'rst': ['docutils>=0.11'],
+        # ':python_version=="2.6"': ['argparse'],
     },
     entry_points={
         'console_scripts': [
