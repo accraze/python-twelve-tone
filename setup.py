@@ -67,7 +67,7 @@ setup(
         'midi',
     ],
     install_requires=[
-        'click',
+        'click>=8.0',
         'mido',
         'rich',
     ],
