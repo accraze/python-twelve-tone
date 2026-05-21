@@ -5,10 +5,12 @@ from twelve_tone.cli import main, generate, p, i, r, ri
 
 
 def test_main():
-    """Test the main CLI group."""
+    """Test the main CLI group shows help."""
     runner = CliRunner()
-    result = runner.invoke(main, [])
+    # When invoked without a command, Click shows help
+    result = runner.invoke(main, ['--help'])
     assert result.exit_code == 0
+    assert 'generate' in result.output
 
 
 def test_generate():
